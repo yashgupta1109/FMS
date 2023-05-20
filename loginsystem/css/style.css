@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.jsscolor{
+    color: #1c22a4 !important;
+}
+
+.main{
+    /* background-color: bisque; */
+}
+
+/* .container{
+    background-color: aqua;
+    display: flex;
+} */
+
+/* jss k logo ka css */
+.logoContainer img{
+    /* background-color: red; */
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    top: 30px;
+    left: 66px;
+}
+
+/* Center part k liye */
+.clgname{
+    /* background-color: blue; */
+    Margin-left: auto;
+    Margin-right: auto;
+    text-align: center;
+}
+
+/* upper text k liye */
+.t1{
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 14px;
+}
+
+/* middle text */
+.t2{
+    color: #004999;
+    font-weight: bold;
+    font-size: 46px;
+    margin-top: -9px;
+}
+/* last text */
+.t3{
+    font-weight: bold;
+    margin-top: 2px;
+    line-height: 1.5;
+}
+
+/* right side image */
+.rightImgContainer{
+    /* background-color: green; */
+    position: absolute;
+    top: 30px;
+    right: 46px;
+}
+
+.part1{
+    /* float: right; */
+}
+
+.center{
+    text-align: center;
+    font-weight: bold !important;
+    margin-top: 5px;
+}
+
+hr{
+    width: 40%;
+    margin: auto !important;
+}
+
+.footerContainer{
+    background-color: black;
+    color: white;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 17px !important;
+}
+
+.footerLeft{
+    float: left;
+    color: white !important;
+}
+
+.footerRight{
+    float: right;
+    margin-right: 40px;
+}
+
+.footerRight a{
+    color: white;
+    text-decoration: none;
+}
+
+.cardContainer{
+    /* background-color: red; */
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #f1f1f1;
+}
+
+.studentContainer{
+    /* background-color: blue; */
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+/* .studentContainer:hover {
+    opacity: 0.8;
+} */
+
+.facultyContainer{
+    /* background-color: green; */
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.adminContainer{
+    /* background-color: pink; */
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.cardContainer a{
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.userContainer{
+    background-color: red;
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.formContainer{
+    width: 40%;
+    margin: auto;
+    margin-top: 15px !important;
+}
+
+.formInside{
+    padding: 25px;
+}
+
+
+
+
+
+
+
