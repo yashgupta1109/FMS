@@ -145,7 +145,7 @@ while($result=mysqli_fetch_array($query))
 
                                 </tbody>
                             </table>
-                            <button id="btnExport" onclick="Export()" type="button"
+                            <button id="btnExport" onclick="window.print()" type="button"
                                 class="btn btn-outline-primary">Download</button>
                             <script type="text/javascript"
                                 src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>

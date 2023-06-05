@@ -124,7 +124,7 @@ echo "<script>alert('Data deleted');</script>";
 
                                 </tbody>
                             </table>
-                            <!-- <button type="button" class="btn btn-outline-primary">Download Excel Sheet</button> -->
+                            <button type="button" class="btn btn-outline-primary" onclick="window.print()">Download</button>
                         </div>
                     </div>
                 </div>
