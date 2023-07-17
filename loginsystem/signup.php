@@ -1,106 +1,102 @@
 <?php session_start();
 require_once('includes/config.php');
-use PHPMailer\PHPMailer\PHPMailer; 
-use PHPMailer\PHPMailer\Exception; 
-      
-    require 'vendor/autoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
 
 //Code for Registration 
-if(isset($_POST['submit']))
-{
-    $year=$_POST['year'];
-    $semester=$_POST['semester'];
-    $department=$_POST['department'];
-    $section=$_POST['section'];
-    $fname=$_POST['fname'];
-    $lname=$_POST['lname'];
-    $email=$_POST['email'];
-    $urollno=$_POST['urollno'];
-    $addno=$_POST['addno'];
-    $password=$_POST['password'];
-    $contact=$_POST['contact'];
-    $status=0;
-$activationcode=md5($email.time());
-$sql=mysqli_query($con,"select id from users where email='$email'");
-$row=mysqli_num_rows($sql);
+if (isset($_POST['submit'])) {
+    $year = $_POST['year'];
+    $semester = $_POST['semester'];
+    $department = $_POST['department'];
+    $section = $_POST['section'];
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email'];
+    $urollno = $_POST['urollno'];
+    $addno = $_POST['addno'];
+    $password = $_POST['password'];
+    $contact = $_POST['contact'];
+    $status = 1;
+    $activationcode = md5($email . time());
+    $sql = mysqli_query($con, "select id from users where email='$email'");
+    $row = mysqli_num_rows($sql);
 
-$sql1=mysqli_query($con,"select id from users where urollno='$urollno'");
-$row1=mysqli_num_rows($sql1);
+    $sql1 = mysqli_query($con, "select id from users where urollno='$urollno'");
+    $row1 = mysqli_num_rows($sql1);
 
-$sql2=mysqli_query($con,"select id from users where addno='$addno'");
-$row2=mysqli_num_rows($sql2);
-if($row>0)
-{
-    echo "<script>alert('Email id already exist with another account. Please try with other email id');</script>";
-}
-else if($row1>0)
-{
-    echo "<script>alert('urollno already exist with another account. Please try with other urollno');</script>";
-}
-else if($row2>0)
-{
-    echo "<script>alert('addno already exist with another account. Please try with other addno');</script>";
-}
-else{
-    $msg=mysqli_query($con,"insert into users(year,semester,department,section,fname,lname,email,urollno,addno,password,contactno,activationcode,status) values('$year','$semester','$department','$section','$fname','$lname','$email','$urollno','$addno.','$password','$contact','$activationcode','$status')");
-
-if($msg)
-{
-    
-    
-    $mail = new PHPMailer;
-    // if(isset($_POST['send'])){
-    
-    
-    // $femail=$_POST['femail'];
-    
-    // $row1=mysqli_query($con,"select email,password,fname from users where email='$femail'");
-    // $row2=mysqli_fetch_array($row1);
-    // if($row2>0)
-    // {
-    // $toemail = $row2['email'];
-    $toemail = $email;
-    // $fname = $row2['fname'];
-    $subject = "Verify you Email";
-    // $password=$row2['password'];
-    $message = "Please click The following link For verifying and activation of your account <div style='padding-top:10px;'><a href='http://localhost/firstyear/loginsystem/email_verification.php?code=$activationcode'>Click Here</a></div>";
-    $mail->isSMTP();                            // Set mailer to use SMTP
-    $mail->Host = 'smtp.gmail.com';             // Specify main and backup SMTP servers
-
-
-    
-    $mail->SMTPAuth = true;                     // Enable SMTP authentication
-    $mail->Username = '20it99@jssaten.ac.in';    // SMTP username
-    $mail->Password = 'Password890@#'; // SMTP password
-    $mail->SMTPSecure = 'tls';                  // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                          // TCP port to connect to
-    $mail->setFrom('20it99@jssaten.ac.in','JSS-SIM');
-    $mail->addAddress($toemail);   // Add a recipient
-    $mail->isHTML(true);  // Set email format to HTML
-    $bodyContent=$message;
-    $mail->Subject =$subject;
-    $bodyContent = 'Dear'." ".$fname;
-    $bodyContent .='<p>'.$message.'</p>';
-    $mail->Body = $bodyContent;
-    if(!$mail->send()) {
-    echo  "<script>alert('Message could not be sent');</script>";
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+    $sql2 = mysqli_query($con, "select id from users where addno='$addno'");
+    $row2 = mysqli_num_rows($sql2);
+    if ($row > 0) {
+        echo "<script>alert('Email id already exist with another account. Please try with other email id');</script>";
+    } else if ($row1 > 0) {
+        echo "<script>alert('urollno already exist with another account. Please try with other urollno');</script>";
+    } else if ($row2 > 0) {
+        echo "<script>alert('addno already exist with another account. Please try with other addno');</script>";
     } else {
-       echo  "<script>alert('Registration successful, Please verify in the registered Email-Id');</script>";
-    }
-    echo "<script type='text/javascript'> document.location = 'login.php'; </script>";
-    // }
-    // else
-    // {
-    // echo "<script>alert('Email not register with us');</script>";   
-    // }
-    // }
+        $msg = mysqli_query($con, "insert into users(year,semester,department,section,fname,lname,email,urollno,addno,password,contactno,activationcode,status) values('$year','$semester','$department','$section','$fname','$lname','$email','$urollno','$addno.','$password','$contact','$activationcode','$status')");
+
+        if ($msg) {
+
+
+            $mail = new PHPMailer;
+            // if(isset($_POST['send'])){
+
+
+            // $femail=$_POST['femail'];
+
+            // $row1=mysqli_query($con,"select email,password,fname from users where email='$femail'");
+            // $row2=mysqli_fetch_array($row1);
+            // if($row2>0)
+            // {
+            // $toemail = $row2['email'];
+            $toemail = $email;
+            // $fname = $row2['fname'];
+            $subject = "Verify you Email";
+            // $password=$row2['password'];
+            $message = "Please click The following link For verifying and activation of your account <div style='padding-top:10px;'><a href='http://localhost/firstyear/loginsystem/email_verification.php?code=$activationcode'>Click Here</a></div>";
+            $mail->isSMTP(); // Set mailer to use SMTP
+            $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
+
+
+
+            $mail->SMTPAuth = true; // Enable SMTP authentication
+//
+            $mail->Username = 'jssatensim@gmail.com'; // SMTP username
+            $mail->Password = 'Test@12345'; // SMTP password
+            //          
+            $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
+            $mail->Port = 587; // TCP port to connect to
+            //        
+            $mail->setFrom('jssatensim@gmail.com', 'JSS-SIM');
+            //      
+            $mail->addAddress($toemail); // Add a recipient
+            $mail->isHTML(true); // Set email format to HTML
+            $bodyContent = $message;
+            $mail->Subject = $subject;
+            $bodyContent = 'Dear' . " " . $fname;
+            $bodyContent .= '<p>' . $message . '</p>';
+            $mail->Body = $bodyContent;
+            if (!$mail->send()) {
+                echo "<script>alert('Message could not be sent');</script>";
+                echo 'Mailer Error: ' . $mail->ErrorInfo;
+            } else {
+                echo "<script>alert('Registration successful, Please verify in the registered Email-Id');</script>";
+            }
+            echo "<script type='text/javascript'> document.location = 'login.php'; </script>";
+            // }
+            // else
+            // {
+            // echo "<script>alert('Email not register with us');</script>";   
+            // }
+            // }
 
 
 
 
 
-//     $to=$email;
+            //     $to=$email;
 //     echo "<script>alert('Registered successfully');</script>";
 //     $subject="Email verification (JSS-SIM)";
 // $headers .= "MIME-Version: 1.0"."\r\n";
@@ -113,9 +109,9 @@ if($msg)
 // </body></html>";
 // mail($to,$subject,$ms,$headers);
 // echo "<script>alert('Registration successful, please verify in the registered Email-Id');</script>";
-    // echo "<script type='text/javascript'> document.location = 'login.php'; </script>";
-}
-}
+            // echo "<script type='text/javascript'> document.location = 'login.php'; </script>";
+        }
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -133,24 +129,24 @@ if($msg)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
     </script>
     <script type="text/javascript">
-    function checkpass() {
-        if (document.signup.password.value != document.signup.confirmpassword.value) {
-            alert(' Password and Confirm Password field does not match');
-            document.signup.confirmpassword.focus();
-            return false;
+        function checkpass() {
+            if (document.signup.password.value != document.signup.confirmpassword.value) {
+                alert(' Password and Confirm Password field does not match');
+                document.signup.confirmpassword.focus();
+                return false;
+            }
+            return true;
         }
-        return true;
-    }
-    function showpass() {
-          var x = document.getElementById("password");
-          var y = document.getElementById("confirmpassword");
-          if (x.type === "password" ) {
-            x.type = "text";
-            y.type = "text";
-          } else {
-            x.type = "password";
-            y.type = "password";
-          }
+        function showpass() {
+            var x = document.getElementById("password");
+            var y = document.getElementById("confirmpassword");
+            if (x.type === "password") {
+                x.type = "text";
+                y.type = "text";
+            } else {
+                x.type = "password";
+                y.type = "password";
+            }
         }
     </script>
 
@@ -159,7 +155,7 @@ if($msg)
 
 <body>
 
-    <?php include_once('includes/header.php');?>
+    <?php include_once('includes/header.php'); ?>
 
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
@@ -209,42 +205,45 @@ if($msg)
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                            
-                                                        <select name="department" class="form-control" id="department">
-                                                            <option selected>Department</option>
-                                                            <option>Computer Science And Engineering</option>
-                                                            <option>Computer Science (AL & ML)</option>
-                                                            <option>Computer Science (DS)</option>
-                                                            <option>Information Technology</option>
-                                                            <option>Electronics And Communication Engineering</option>
-                                                            <option>Electrical And Electronics Engineering</option>
-                                                            <option>Electrical Engineering</option>
-                                                            <option>Mechanical Engineering</option>
-                                                        </select>
-</div>
+
+                                                <select name="department" class="form-control" id="department">
+                                                    <option selected>Department</option>
+                                                    <option>Computer Science And Engineering</option>
+                                                    <option>Computer Science (AL & ML)</option>
+                                                    <option>Computer Science (DS)</option>
+                                                    <option>Information Technology</option>
+                                                    <option>Electronics And Communication Engineering</option>
+                                                    <option>Electrical And Electronics Engineering</option>
+                                                    <option>Electrical Engineering</option>
+                                                    <option>Mechanical Engineering</option>
+                                                </select>
+                                            </div>
 
                                             <div class="form-floating mb-3">
-                                            <!-- <label for="semester">Section</label> -->
-                                                        <select name="section" class="form-control" id="section">
-                                                            <option selected>Section</option>
-                                                            <option>A 1</option>
-                                                            <option>A 2</option>
-                                                            <option>A 3</option>
-                                                            <option>A 4</option>
-                                                            <option>A 5</option>
-                                                            <option>A 6</option>
-                                                            <option>A 7</option>
-                                                            <option>A 8</option>
-                                                            <option>B 1</option>
-                                                            <option>B 2</option>
-                                                            <option>B 3</option>
-                                                            <option>B 4</option>
-                                                            <option>B 5</option>
-                                                            <option>B 6</option>
-                                                            <option>B 7</option>
-                                                            <option>B 8</option>
-                                                        </select>
-</div>
+                                                <!-- <label for="semester">Section</label> -->
+                                                <select name="section" class="form-control" id="section">
+                                                    <option selected>Section</option>
+                                                    <option>A 1</option>
+                                                    <option>A 2</option>
+                                                    <option>A 3</option>
+                                                    <option>A 4</option>
+                                                    <option>A 5</option>
+                                                    <option>A 6</option>
+                                                    <option>A 7</option>
+                                                    <option>A 8</option>
+                                                    <option>B 1</option>
+                                                    <option>B 2</option>
+                                                    <option>B 3</option>
+                                                    <option>B 4</option>
+                                                    <option>B 5</option>
+                                                    <option>B 6</option>
+                                                    <option>B 7</option>
+                                                    <option>B 8</option>
+                                                    <option>IT 1</option>
+                                                    <option>IT 2</option>
+                                                    <option>IT 2</option>
+                                                </select>
+                                            </div>
 
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
@@ -307,7 +306,7 @@ if($msg)
                                                             required />
                                                         <label for="inputPassword">Password</label>
                                                         <input type="checkbox" onclick="showpass()"> Show Password(s)
-                                                        
+
                                                     </div>
                                                 </div>
 
@@ -343,7 +342,7 @@ if($msg)
                     </div>
             </main>
         </div>
-        <?php include_once('includes/footer.php');?>
+        <?php include_once('includes/footer.php'); ?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
     </script>
