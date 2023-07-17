@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 24, 2023 at 08:39 PM
+-- Generation Time: Jul 11, 2023 at 10:27 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -89,7 +89,29 @@ INSERT INTO `courseoutcomes` (`sno`, `year`, `semester`, `subjectcode`, `subject
 (28, 1, 2, 'BEC151', 'Fundamental Of Electronics Engineering Lab', 'Discuss electronic components, equipments, and PCB preparation techniques.', 'Illustrate the complete process of PCB fabrication and the transformer winding.', 'Examine the characteristics and applications of two terninal (Diode) and three terminal               (BJT)  device.', 'Examine the basic applications of OP-AMP.', 'Varification of digital logic gates.', NULL),
 (29, 1, 2, 'BWS151', 'Workshop Practice Lab', 'Use various engineering materials, tools, machines and measuring equipments.', 'Apply the working principle and perform machining operations on lathe machine.', 'Perform manufacturing operations on components in fitting and carpentry shop.', 'Perform operations in welding, moulding, casting and gas cutting.', 'Demonstrate the features of CNC machine and 3D printing to fabricate model.', NULL),
 (30, 1, 2, 'BAS104', 'Environment and Ecology', 'Gain in-depth knowledge on natural processes that sustain life', 'Estimate and Predict the consequences of human actions on the web of life, global economy and               quality of human life.', 'Develop critical thinking for shaping strategies (scientific, social, economic and legal) for             environmental protection ', 'Acquire values and attitudes towards understanding complex environmental economic social             challenges, ', 'Adopt sustainability as a practice in life, society and industry.', NULL),
-(32, 1, 2, 'BAS103.', 'Engineering Mathematics I.', 'Understand the concept of complex matrices, Eigen values, Eigen vectors and apply the concept of rank to                evaluate linear simultaneous equations', 'Remember the concept of differentiation to find successive differentiation, Leibnitz Theorem, and create               curve tracing, and find partial and total derivatives', 'Applying the concept of partial differentiation to evaluate extrema, series expansion, error approximation               of   functions and Jacobians.', 'Remember the concept of Beta and Gamma function; analyze area and volume and Dirichlet’s theorem in                multiple integral', 'Apply the concept of Vector Calculus to analyze and evaluate directional derivative, line, surface and              volume integrals.', NULL);
+(32, 1, 2, 'BAS103.', 'Engineering Mathematics I.', 'Understand the concept of complex matrices, Eigen values, Eigen vectors and apply the concept of rank to                evaluate linear simultaneous equations', 'Remember the concept of differentiation to find successive differentiation, Leibnitz Theorem, and create               curve tracing, and find partial and total derivatives', 'Applying the concept of partial differentiation to evaluate extrema, series expansion, error approximation               of   functions and Jacobians.', 'Remember the concept of Beta and Gamma function; analyze area and volume and Dirichlet’s theorem in                multiple integral', 'Apply the concept of Vector Calculus to analyze and evaluate directional derivative, line, surface and              volume integrals.', NULL),
+(33, 2, 4, 'KAS 402', 'Maths IV', 'Classify partial differential equations and transform into canonical form and solve linear and nonlinear partial differential equations of first order.', 'Apply the knowledge of partial differential equations to Engineering, sciences & technology.', 'Introduce measures of central tendency and various forecasting techniques.', 'To develop an understanding of the theory of probability, rules of probability and Probability distributions.', 'Understand the meaning and process of hypothesis testing including T-test, F-test, Chi-Square test, ANOVA, Quality Control chart.', NULL),
+(34, 2, 4, 'KVE-401\r\n', 'Universal Universal Human Values', 'Explain the fundamentals of Value education		', 'Define the role of harmony at various levels of living.		', 'Describe the role of family and society towards life and happiness.', 'Establish relationship between nature and human life.		', 'Discuss the importance of ethics in professional life.', NULL),
+(35, 2, 4, 'KCS401', 'Operating Systems', 'Explain main components, services, types and structure of Operating Systems.', 'Apply the various algorithms and techniques to handle the various concurrency control issues.', 'Compare and apply various CPU scheduling algorithms for process execution.', 'Identify occurrence of deadlock and describe ways to handle it.', 'Explain and apply various memory, I/O and disk management techniques.', NULL),
+(36, 2, 4, 'KCS402', 'Theory of Automata and Formal Languages', 'Design deterministic and nondeterministic automata and regular expressions for specified regular languages', 'Convert among various notations for a regular language, such as DFAs, NFAs, and regular expressions.', 'Design grammar and PDA for CFL and state and prove their equivalence.', 'Design TM to recognize language and compute functions.', 'State and prove properties of regular, context free, recursive and recursive enumerable languages.', 'Explain the significance of the Universal Turing machine, Church-Turing thesis and concept of Undecidability.'),
+(37, 2, 4, 'KIT401', 'Web Designing', 'Explain the  principles involved in website design ', 'Create static web pages using HTML.', 'Design effective and responsive web sites using CSS.', 'Apply the basics of Java Script to validate forms.', 'Explain web hosting mechanism and SEO services', NULL),
+(38, 2, 4, 'KCS451', 'Operating Systems Lab', 'To compare various CPU scheduling algorithms through simulation.', 'To simulate various synchronization algorithms to achieve mutual exclusion using Semaphores.', 'Simulate paging technique for memory management.', 'To simulate resource acquisition and release for deadlock handling.', 'Simulate various disk scheduling algorithms.', NULL),
+(39, 2, 4, 'KIT451', 'Web Designing Lab', 'Design static web pages using HTML', 'Create HTML web pages for demonstration of web based objects.', 'Demonstrate dynamic implementation of web pages using HTML, CSS, XML, and JavaScript.', NULL, NULL, NULL),
+(40, 2, 4, 'KCS453', 'Python Language Programming Lab', 'Write, debug and execute simple Python scripts', 'Develop programs in Python with conditional and loop constructs', 'Develop python programs using strings, lists, sets, tuples and dictionaries', 'Apply object oriented and structured programming concepts in python programs', 'Apply basic file handing operations to process data from/to text files', 'Design a small GUI application in python using the concepts of event driven programming'),
+(41, 2, 4, 'KNC402\r\n', 'Python Programming', 'Develop Python programs with conditionals and loops', 'Develop Python programs using modular and object oriented approaches', 'Construct python programs using data structures such as strings, lists, tuples, sets and dictionaries', 'Apply searching, sorting and merging operations in Python.', NULL, NULL),
+(42, 3, 6, 'KCS601', 'Software Engineering', 'Explain various software characteristics and analyze different software Development Models.', 'Demonstrate the contents of a SRS and apply basic software quality assurance practices to ensure the design, development meet or exceed applicable standards.', 'Compare and contrast various methods for software design.', 'Formulate testing strategy for software systems, employ techniques such as unit testing, Test driven development and functional testing.', 'Manage software development process independently as well as in teams and make use of various software management tools for development, maintenance and analysis.', NULL),
+(43, 3, 6, 'KIT601', 'Data Analytics', 'Discuss various concepts of data analytics pipeline.', 'Apply classification and regression techniques.', 'Explain and apply mining techniques on streaming data', 'Compare different clustering and frequent pattern mining algorithms.', 'Describe the concept of R programming and implement analytics on Big data using R.', NULL),
+(44, 3, 6, 'KCS603', 'Computer Networks', NULL, NULL, NULL, NULL, NULL, NULL),
+(45, 3, 6, 'KOE068', 'Open Elective -Software Project Management', 'Identify project planning objectives, along with various cost/effort estimation models.', 'Organize & schedule project activities to compute critical path', 'Monitor and control project activities.', 'Formulate testing objectives and test plan to ensure good software quality under SEI-CMM.', 'Configure changes and manage risks using project management', NULL),
+(46, 3, 6, 'KCS062', 'Departmental Elective III -Image Processing', 'Explain the basic concepts of two-dimensional signal acquisition, sampling, quantization and color model.', 'Apply image processing techniques for image enhancement in both the spatial and frequency (Fourier) domains.', 'Apply and compare image restoration techniques in both spatial and frequency domain.', 'Compare edge-based and region-based segmentation algorithms for ROI extraction.', 'Explain compression techniques and descriptors for image processing.', NULL),
+(47, 3, 6, 'KNC601', 'Constitution of India, Law and Engineering', 'Identify and explore the basic features and modalities about Indian Constitution', 'Differentiate and relate the functioning of Indian parliamentary system at the centre and state level.', 'Differentiate different aspects of Indian Legal System and its related bodies.', 'Apply different laws and regulations related to engineering practices.', 'Correlate role of engineers with different organizations and governance models.', NULL),
+(48, 3, 6, 'KCS651', 'Software Engineering Lab', 'Identify ambiguities, inconsistencies and incompleteness from a requirementsspecification and state functional and non-functional requirements', 'Identify different actors and use cases from a given problem statement and draw a use-case diagram to associate use cases with different types of relationships', 'Identify entity sets, their attributes, and various relationships and represent the data model through ER diagram.', 'Draw a class diagram after identifying classes and association among them.', 'Able to use modern engineering tools for specification, design, implementation and testing.', NULL),
+(49, 3, 6, 'KIT651', 'Data Analytics Lab', 'Implement numerical and statistical analysis on various data sources', 'Apply data preprocessing and dimensionality reduction methods on raw data C324.3: Implement linear regression technique on numeric data for prediction', 'Execute clustering and association rule mining algorithms on different datasets', 'Implement and evaluate the performance of KNN algorithm on different datasets', NULL, NULL),
+(50, 3, 6, 'KCS653', 'Computer Networks Lab', NULL, NULL, NULL, NULL, NULL, NULL),
+(51, 4, 8, 'KOE083', 'ENTREPRENEURSHIP DEVELOPMENT', NULL, NULL, NULL, NULL, NULL, NULL),
+(52, 4, 8, 'KHU 802', 'PROJECT MANAGEMENT & ENTREPRENEURSHIP', 'Explain the role and importance of entrepreneurship for economic development and discern distinct entrepreneurial traits', 'Identify the business opportunities with implementation of innovating ideas successfully and develop the management skill for entrepreneurship in order to create value in business.', 'Apply the concepts of Project Management to execute a project and evaluate its feasibility based on its technical, environmental, market & managerial appraisal aspects.', 'Analyze the financial parameters in order to estimate the Budget and generate the detailed financial report of the project.', 'Analyze different business models for social ventures and its legal framework and also, assess the strengths and limitations of social entrepreneurship.', NULL),
+(53, 4, 8, 'KOE 094', 'DIGITAL AND SOCIAL MEDIA MARKETING', 'To Describe marketing strategies in the digital age and provide fundamental knowledge for working in an online team.', 'To Demonstrate content planning strategies and various social media platforms for marketing campaigns', 'To Explain various digital marketing channels for consumer acquisition and engagement.', 'To evaluate the performance of digital marketing strategies for business success.', 'To outline the security and privatization issues with digital marketing and identify its trends in Indian and global context.', NULL),
+(54, 4, 8, 'KOE 093', 'DATA WAREHOUSING & DATA MINING', NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -219,7 +241,29 @@ INSERT INTO `faculty` (`id`, `fname`, `lname`, `email`, `department`, `designati
 (116, 'Mr. Rakesh', 'Kumar', 'rakesh.kumar@jssaten.ac.in', 'Electronics Engineering', NULL, NULL, '', NULL, NULL, 'Test@12345'),
 (117, 'Dr. Suvandan', 'Saraswat', 'suvandan.saraswat@jssaten.ac.in', 'Mechanical Engineering', NULL, NULL, '', NULL, NULL, 'Test@12345'),
 (118, 'Mr. Nitin Kumar', 'Chauhan', 'nitinchauhan@jssaten.ac.in', 'Mechanical Engineering', NULL, NULL, '', NULL, NULL, 'Test@12345'),
-(119, 'Dr. Gaurav', 'Jain', 'gauravjain@jssaten.ac.in', 'Mechanical Engineering', NULL, NULL, '', NULL, NULL, 'Test@12345');
+(119, 'Dr. Gaurav', 'Jain', 'gauravjain@jssaten.ac.in', 'Mechanical Engineering', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(121, 'Mr.M.N', 'Nagraj', 'mn@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(122, 'Dr. Gunjan', 'Ansari', 'gunjan@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(123, 'Dr. Dhiraj', 'Pandey', 'dhiraj@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(124, 'Dr. Shikha', 'Verma', 'shikha@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(125, 'Dr. Meena', 'Arora', 'meena@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(126, 'Dr. Megha', 'Jain', 'megha@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(127, 'Ms. Ujjwala', 'Thakur', 'ujjwala@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(128, 'Ms. Rosey', 'Chauhan', 'rosey@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(129, 'Mr. Manoj', 'Kumar', 'manoj@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(130, 'Mr. Shukhendra', 'Singh', 'shukhendra@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(131, 'Ms. Aparna', 'Srivastava', 'aparna@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(132, 'Dr. Sonam', 'Singh', 'sonam@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(133, 'Dr. Vineeta', 'Khemchandani', 'vineeta@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(134, 'Dr. Pushpa', 'Choudhary', 'pushpa@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(135, 'Ms. Prachi', 'Chhabra', 'prachi@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(136, 'Mr. Birendra', 'Verma', 'birendra@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(137, 'Dr. Jyoti', 'Gautam', 'jyoti@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(138, 'Dr. Kokila', 'Saxena', 'kokila@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(139, 'Ms. Charu', 'Awasthi', 'charu@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(140, 'Mr. Ajay Kumar', 'Indoria', 'ajay@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(141, 'Dr. Neha', 'Gupta', 'neha@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345'),
+(145, 'Ms. Pooja', 'Prakash', 'pooja@gmail.com', '', NULL, NULL, '', NULL, NULL, 'Test@12345');
 
 -- --------------------------------------------------------
 
@@ -1485,7 +1529,24 @@ INSERT INTO `respone` (`id`, `usersemail`, `facultyemail`, `subjectcode`, `subje
 (1229, '22ec012@jssaten.ac.in', 'divyaghildyal@jssaten.ac.in', 'BAS151', 'Engineering Physics Lab', 1, 1, 1, 1, 1, 0, NULL, 1, 2, 1, 1, 2),
 (1230, '22ec012@jssaten.ac.in', 'Piyali.gope@jssaten.ac.in', 'BAS155', 'English Language Lab', 3, 3, 3, 3, 3, 0, NULL, 2, 2, 3, 4, 3),
 (1231, '22ec012@jssaten.ac.in', 'uditmittal.eed@jssaten.ac.in', 'BEE151', 'Basic Electrical Engineering Lab', 1, 1, 1, 1, 1, 0, NULL, 1, 2, 1, 3, 1),
-(1232, '22ec012@jssaten.ac.in', 'naveenjmurthy@jssaten.ac.in', 'BCE151', 'Engineering Graphics & Design Lab', 3, 3, 3, 3, 3, 0, NULL, 3, 2, 4, 2, 4);
+(1232, '22ec012@jssaten.ac.in', 'naveenjmurthy@jssaten.ac.in', 'BCE151', 'Engineering Graphics & Design Lab', 3, 3, 3, 3, 3, 0, NULL, 3, 2, 4, 2, 4),
+(1233, 'yashgupta0911@gmail.com', 'mn@gmail.com', 'KVE-401\r\n', 'Maths IV', 1, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1234, 'yashgupta0911@gmail.com', 'gunjan@gmail.com', 'KCS401', 'Universal Universal Human Values', 1, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1235, 'yashgupta0911@gmail.com', 'dhiraj@gmail.com', 'KCS402', 'Operating Systems', 1, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1236, 'yashgupta0911@gmail.com', 'shikha@gmail.com', 'KIT401', 'Theory of Automata and Formal Languages', 1, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1237, 'yashgupta0911@gmail.com', 'meena@gmail.com', 'KCS451', 'Web Designing', 1, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1238, 'yashgupta0911@gmail.com', 'megha@gmail.com', 'KIT451', 'Operating Systems Lab', 1, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1239, 'yashgupta0911@gmail.com', 'manoj@gmail.com', 'KCS453', 'Web Designing Lab', 1, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1240, 'yashgupta0911@gmail.com', 'aparna@gmail.com', 'KNC402\r\n', 'Python Language Programming Lab', 1, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1242, 'yashgupta0911@gmail.com', 'mn@gmail.com', 'KVE-401\r\n', 'Maths IV', 2, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1243, 'yashgupta0911@gmail.com', 'gunjan@gmail.com', 'KCS401', 'Universal Universal Human Values', 3, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1244, 'yashgupta0911@gmail.com', 'dhiraj@gmail.com', 'KCS402', 'Operating Systems', 1, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1245, 'yashgupta0911@gmail.com', 'shikha@gmail.com', 'KIT401', 'Theory of Automata and Formal Languages', 3, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 4),
+(1246, 'yashgupta0911@gmail.com', 'meena@gmail.com', 'KCS451', 'Web Designing', 3, 1, 1, 1, 3, 0, NULL, 1, 1, 1, 1, 1),
+(1247, 'yashgupta0911@gmail.com', 'megha@gmail.com', 'KIT451', 'Operating Systems Lab', 3, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1248, 'yashgupta0911@gmail.com', 'manoj@gmail.com', 'KCS453', 'Web Designing Lab', 3, 2, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1249, 'yashgupta0911@gmail.com', 'aparna@gmail.com', 'KNC402\r\n', 'Python Language Programming Lab', 2, 1, 1, 1, 1, 0, NULL, 1, 1, 1, 1, 1),
+(1251, 'yashgupta0911@gmail.com', 'mn@gmail.com', 'KVE-401\r\n', 'Maths IV', 2, 1, 1, 1, 1, 0, NULL, 3, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -1780,7 +1841,75 @@ INSERT INTO `subjectalloted` (`sno`, `facultyemail`, `year`, `semester`, `sectio
 (277, 'vishnutiwari@jssaten.ac.in', 1, 2, 'B 1', 'BWS151'),
 (278, 'neelam.khandelwal@jssaten.ac.in', 1, 2, 'B 1', 'BWS151'),
 (279, 'rudreshs@gmail.com', 1, 2, 'B 1', 'BWS151'),
-(280, 'mallannanagaraj@jssaten.ac.in', 1, 2, 'B 1', 'BWS151');
+(280, 'mallannanagaraj@jssaten.ac.in', 1, 2, 'B 1', 'BWS151'),
+(281, 'shalinisingh@jssaten.ac.in', 2, 4, 'IT 1', 'KAS 402'),
+(282, 'mn@gmail.com', 2, 4, 'IT 1', 'KVE-401\r\n'),
+(283, 'gunjan@gmail.com', 2, 4, 'IT 1', 'KCS401'),
+(284, 'dhiraj@gmail.com', 2, 4, 'IT 1', 'KCS402'),
+(285, 'shikha@gmail.com', 2, 4, 'IT 1', 'KIT401'),
+(286, 'meena@gmail.com', 2, 4, 'IT 1', 'KCS451'),
+(287, 'shikha@gmail.com', 2, 4, 'IT 1', 'KCS451'),
+(288, 'gunjan@gmail.com', 2, 4, 'IT 1', 'KCS451'),
+(289, 'megha@gmail.com', 2, 4, 'IT 1', 'KIT451'),
+(290, 'ujjwala@gmail.com', 2, 4, 'IT 1', 'KIT451'),
+(291, 'rosey@gmail.com', 2, 4, 'IT 1', 'KIT451'),
+(292, 'manoj@gmail.com', 2, 4, 'IT 1', 'KCS453'),
+(293, 'shukhendra@gmail.com', 2, 4, 'IT 1', 'KCS453'),
+(294, 'aparna@gmail.com', 2, 4, 'IT 1', 'KNC402\r\n'),
+(295, 'sonam@gmail.com', 2, 4, 'IT 2', 'KAS 402'),
+(297, 'mn@gmail.com', 2, 4, 'IT 2', 'KVE-401\r\n'),
+(298, 'vineeta@gmail.com', 2, 4, 'IT 2', 'KCS401'),
+(299, 'pushpa@gmail.com', 2, 4, 'IT 2', 'KCS402'),
+(300, 'ujjwala@gmail.com', 2, 4, 'IT 2', 'KIT401'),
+(301, 'vineeta@gmail.com', 2, 4, 'IT 2', 'KCS451'),
+(302, 'shikha@gmail.com', 2, 4, 'IT 2', 'KCS451'),
+(303, 'gunjan@gmail.com', 2, 4, 'IT 2', 'KCS451'),
+(304, 'prachi@gmail.com', 2, 4, 'IT 2', 'KIT451'),
+(305, 'ujjwala@gmail.com', 2, 4, 'IT 2', 'KIT451'),
+(306, 'parul@gmailcom', 2, 4, 'IT 2', 'KCS453'),
+(307, 'birendra@gmail.com', 2, 4, 'IT 2', 'KCS453'),
+(308, 'shukhendra@gmail.com', 2, 4, 'IT 2', 'KCS453'),
+(309, 'dhiraj@gmail.com', 2, 4, 'IT 2', 'KNC402\r\n'),
+(310, 'meena@gmail.com', 3, 6, 'IT 1', 'KCS601'),
+(311, 'jyoti@gmail.com', 3, 6, 'IT 1', 'KIT601'),
+(312, 'birendra@gmail.com', 3, 6, 'IT 1', 'KCS603'),
+(313, 'prachi@gmail.com', 3, 6, 'IT 1', 'KOE068'),
+(314, 'manoj@gmail.com', 3, 6, 'IT 1', 'KCS062'),
+(315, 'kokila@gmail.com', 3, 6, 'IT 1', 'KNC601'),
+(316, 'dhiraj@gmail.com', 3, 6, 'IT 1', 'KCS651'),
+(317, 'charu@gmail.com', 3, 6, 'IT 1', 'KCS651'),
+(318, 'aparna@gmail.com', 3, 6, 'IT 1', 'KIT651'),
+(319, 'manoj@gmail.com', 3, 6, 'IT 1', 'KIT651'),
+(320, 'shukhendra@gmail.com', 3, 6, 'IT 1', 'KIT651'),
+(321, 'jyoti@gmail.com', 3, 6, 'IT 1', 'KIT651'),
+(322, 'ajay@gmail.com', 3, 6, 'IT 1', 'KIT651'),
+(323, 'birendra@gmail.com', 3, 6, 'IT 1', 'KCS653'),
+(324, 'megha@gmail.com', 3, 6, 'IT 1', 'KCS653'),
+(325, 'manoj@gmail.com', 3, 6, 'IT 2', 'KCS601'),
+(326, 'aparna@gmail.com', 3, 6, 'IT 2', 'KIT601'),
+(327, 'ajay@gmail.com', 3, 6, 'IT 2', 'KCS603'),
+(328, 'rosey@gmail.com', 3, 6, 'IT 2', 'KOE068'),
+(329, 'shukhendra@gmail.com', 3, 6, 'IT 2', 'KCS062'),
+(330, 'kokila@gmail.com', 3, 6, 'IT 2', 'KNC601'),
+(331, 'dhiraj@gmail.com', 3, 6, 'IT 2', 'KCS651'),
+(332, 'prachi@gmail.com', 3, 6, 'IT 2', 'KCS651'),
+(333, 'charu@gmail.com', 3, 6, 'IT 2', 'KCS651'),
+(334, 'aparna@gmail.com', 3, 6, 'IT 2', 'KIT651'),
+(335, 'manoj@gmail.com', 3, 6, 'IT 2', 'KIT651'),
+(336, 'jyoti@gmail.com', 3, 6, 'IT 2', 'KIT651'),
+(337, 'gunjan@gmail.com', 3, 6, 'IT 2', 'KIT651'),
+(338, 'neha@gmail.com', 3, 6, 'IT 2', 'KCS653'),
+(339, 'megha@gmail.com', 3, 6, 'IT 2', 'KCS653'),
+(340, 'charu@gmail.com', 3, 6, 'IT 2', 'KCS653'),
+(341, 'parul@gmailcom', 3, 6, 'IT 2', 'KCS653'),
+(342, 'madanprasadcs@jssaten.ac.in', 4, 8, 'IT 1', 'KOE083'),
+(343, 'suvandan.saraswat@jssaten.ac.in', 4, 8, 'IT 1', 'KHU 802'),
+(344, 'pooja@gmail.com', 4, 8, 'IT 1', 'KOE 094'),
+(345, 'gunjan@gmail.com', 4, 8, 'IT 1', 'KOE 093'),
+(346, 'madanprasadcs@jssaten.ac.in', 4, 8, 'IT 2', 'KOE083'),
+(347, 'suvandan.saraswat@jssaten.ac.in', 4, 8, 'IT 2', 'KHU 802'),
+(348, 'pooja@gmail.com', 4, 8, 'IT 2', 'KOE 094'),
+(349, 'gunjan@gmail.com', 4, 8, 'IT 2', 'KOE 093');
 
 -- --------------------------------------------------------
 
@@ -1819,7 +1948,29 @@ INSERT INTO `subjects` (`id`, `year`, `semester`, `section_`, `subjectcode`, `su
 (28, 1, 2, 'B', 'BCS151', 'Programming For Problem Solving Lab'),
 (29, 1, 2, 'B', 'BEC151', 'Fundamental Of Electronics Engineering Lab'),
 (30, 1, 2, 'B', 'BWS151', 'Workshop Practice Lab'),
-(31, 1, 2, 'B', 'BAS103.', 'Engineering Mathematics I.');
+(31, 1, 2, 'B', 'BAS103.', 'Engineering Mathematics I.'),
+(32, 2, 4, 'IT', 'KAS 402', 'Maths IV'),
+(33, 2, 4, 'IT', 'KVE-401\r\n', 'Universal Universal Human Values'),
+(34, 2, 4, 'IT', 'KCS401', 'Operating Systems'),
+(35, 2, 4, 'IT', 'KCS402', 'Theory of Automata and Formal Languages'),
+(36, 2, 4, 'IT', 'KIT401', 'Web Designing'),
+(37, 2, 4, 'IT', 'KCS451', 'Operating Systems Lab'),
+(38, 2, 4, 'IT', 'KIT451', 'Web Designing Lab'),
+(39, 2, 4, 'IT', 'KCS453', 'Python Language Programming Lab'),
+(40, 2, 4, 'IT', 'KNC402\r\n', 'Python Programming'),
+(41, 3, 6, 'IT', 'KCS601', 'Software Engineering'),
+(44, 3, 6, 'IT', 'KIT601', 'Data Analytics'),
+(45, 3, 6, 'IT', 'KCS603', 'Computer Networks'),
+(46, 3, 6, 'IT', 'KOE068', 'Open Elective -Software Project Management'),
+(47, 3, 6, 'IT', 'KCS062', 'Departmental Elective III -Image Processing'),
+(48, 3, 6, 'IT', 'KNC601', 'Constitution of India, Law and Engineering'),
+(49, 3, 6, 'IT', 'KCS651', 'Software Engineering Lab'),
+(55, 3, 6, 'IT', 'KIT651', 'Data Analytics Lab'),
+(56, 3, 6, 'IT', 'KCS653', 'Computer Networks Lab'),
+(57, 4, 8, 'IT', 'KOE083', 'ENTREPRENEURSHIP DEVELOPMENT'),
+(58, 4, 8, 'IT', 'KHU 802', 'PROJECT MANAGEMENT & ENTREPRENEURSHIP'),
+(59, 4, 8, 'IT', 'KOE 094', 'DIGITAL AND SOCIAL MEDIA MARKETING'),
+(60, 4, 8, 'IT', 'KOE 093', 'DATA WAREHOUSING & DATA MINING');
 
 -- --------------------------------------------------------
 
@@ -1852,7 +2003,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `year`, `semester`, `department`, `section`, `fname`, `lname`, `email`, `urollno`, `addno`, `password`, `contactno`, `img`, `posting_date`, `feedback`, `activationcode`, `status`) VALUES
-(42, 1, 2, 'Information Technology', 'A 1', 'Yash', 'Gupta', 'yashgupta0911@gmail.com', '2100910139009', '21DLIT009', 'Test@12345', '7905047835', 'kk.jpg', '2023-02-28 16:28:24', 0, 'fa65903dc2f4501b964aea4b10d79b2a', 1),
+(42, 2, 4, 'Information Technology', 'IT 1', 'Yash', 'Gupta', 'yashgupta0911@gmail.com', '2100910139009', '21DLIT009', 'Test@12345', '7905047835', 'Entrepreneurship.png', '2023-02-28 16:28:24', 1, 'fa65903dc2f4501b964aea4b10d79b2a', 1),
 (46, 1, 2, 'Computer Science And Engineering', 'B 3', 'Shubham', 'Kumar', '22cs116@jssaten.ac.in', '0', '22CS116.', 'Jss Aten @ 1234', '8287359082', NULL, '2023-03-02 05:44:11', 1, 'b43f5902c8994c4ed8715f39bd0debd0', 1),
 (47, 1, 2, 'Computer Science And Engineering', 'B 1', 'shreyansh', 'garg', 'shreyanshgarg505@gmail.com', '22', '22CS006.', 'Princeof@123', '9568490059', NULL, '2023-03-02 05:46:26', 1, 'b1626a47b0388e2fbc61c3b988c34792', 1),
 (48, 1, 2, 'Computer Science And Engineering', 'B 1', 'Akanksha', 'Sharma', '22CS153@jssaten.ac.n', '2000910139153', '22CS153.', 'Akanksha@17', '7617400705', NULL, '2023-03-02 05:48:00', 0, 'db191691ce05ab799e2e7a883525ce7e', 0),
@@ -2145,7 +2296,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `courseoutcomes`
 --
 ALTER TABLE `courseoutcomes`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `department`
@@ -2157,25 +2308,25 @@ ALTER TABLE `department`
 -- AUTO_INCREMENT for table `faculty`
 --
 ALTER TABLE `faculty`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=146;
 
 --
 -- AUTO_INCREMENT for table `respone`
 --
 ALTER TABLE `respone`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1233;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1252;
 
 --
 -- AUTO_INCREMENT for table `subjectalloted`
 --
 ALTER TABLE `subjectalloted`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=281;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=350;
 
 --
 -- AUTO_INCREMENT for table `subjects`
 --
 ALTER TABLE `subjects`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT for table `users`

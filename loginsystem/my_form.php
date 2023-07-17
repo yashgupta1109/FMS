@@ -51,11 +51,11 @@ include_once('includes/config.php');
         <table>
           <tr class="bg-light">
             <td>
-              <span>CO1</span>
+              <span class="mr-5">CO1</span>
             </td>
             <td>
               <div class="form-check my-2  pl-5 form-check-inline">
-                <input class="form-check-input" type="radio" name="co1" id="inlineRadio1" value="1"  />
+                <input class="form-check-input mr-5" type="radio" name="co1" id="inlineRadio1" value="1"  />
                 <label class="form-check-label" for="inlineRadio1">1</label>
               </div>
               <div class="form-check  my-2 pl-5 form-check-inline">
